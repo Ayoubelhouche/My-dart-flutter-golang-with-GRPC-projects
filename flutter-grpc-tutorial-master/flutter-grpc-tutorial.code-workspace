@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "api"
+		},
+		{
+			"path": "flutter_client"
+		},
+		{
+			"path": "go-server"
+		},
+		{
+			"path": "third_party"
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"Friendlychat",
+			"Stateful",
+			"amsokol",
+			"cupertino",
+			"grpc",
+			"noname",
+			"pbgrpc",
+			"protobuf",
+			"ptypes",
+			"rxdart",
+			"uuid",
+			"vsync"
+		]
+	}
+}
