@@ -1,19 +1,21 @@
 package main
-import(
+
+import (
 	"context"
-	"goprojects/proto"
 	"net"
+
+	"github.com/Ayoubelhouche/projects/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )
 type server struct{}
 
 func main() {
-	listener, err:=net.Listen("tcp", ":4040")
+	listener, err:=net.Listen("tcp",":8002")
 	if err != nil{
 		panic(err)
 	}
-	println("Starting server at port :4040 using tcp")
+	println("Starting server at port :8002 using tcp")
 	
 	srv :=grpc.NewServer()
 	proto.RegisterAddServiceServer(srv,&server{})

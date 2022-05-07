@@ -1,4 +1,4 @@
-module goprojects/proto
+module github.com/Ayoubelhouche/projects
 
 go 1.18
 

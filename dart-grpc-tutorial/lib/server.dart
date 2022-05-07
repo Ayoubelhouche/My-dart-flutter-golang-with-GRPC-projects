@@ -1,7 +1,5 @@
-import 'dart:html';
 
 import 'package:grpc/grpc.dart';
-import 'package:grpc/src/server/call.dart';
 import 'package:grpc_tutorial/src/generated/todo.pbgrpc.dart'; // Import the protofbuff files
 
 class TodoService extends TodoServiceBase {

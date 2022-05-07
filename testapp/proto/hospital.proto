@@ -1,0 +1,21 @@
+syntax="proto3";
+option go_package = "pb/inventory";
+
+service HospitalServer{
+    rpc PostHospital (Hospital) returns (Response);
+    rpc PostHospitals(Hospitals) returns (Response);
+}
+
+
+message Hospital{
+    string name=1;
+    string region=2;
+    string location=3;
+}
+message Hospitals{
+    repeated Hospital Hospitals=1;
+}
+
+message Response{
+    string value= 1;
+}

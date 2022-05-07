@@ -1,7 +1,6 @@
 // ignore_for_file: dead_code, empty_statements
 
 import 'package:flutter/material.dart';
-import 'package:final_app/lib/sign_in_button.dart';
 import 'package:final_app/common_widgets/custom_elevated_button.dart';
 import 'package:final_app/common_widgets/custom_elevated_button.dart';
 
@@ -51,11 +50,13 @@ class SignInPage extends StatelessWidget {
                 ),
               ),
               color: Colors.black,
-              onPressed: () {}),
+              onPressed: () {})
+              ,SizedBox(width: 11,),
         ],
         backgroundColor: Image.asset('images/Signin.jpg').color,
       )
-    ]);
+    ]
+    );
   }
 // void _signInwothGoogle(){
 //     // TO DO : auth with google sign in
@@ -69,113 +70,6 @@ class SignInPage extends StatelessWidget {
           fit: BoxFit.fitWidth,
         ),
       ),
-      // padding: const EdgeInsets.all(16.0),
-      // child: Column(
-      //   crossAxisAlignment: CrossAxisAlignment.stretch,
-      //   mainAxisAlignment: MainAxisAlignment.center,
-      //   children: <Widget>[
-      //     Text("Sign in ",
-      //     textAlign: TextAlign.center,
-      //     style: TextStyle(fontSize: 32.0,
-      //     fontWeight: FontWeight.w600),
-      //     ),
-      //     const SizedBox(
-      //       height: 48.0,
-      //     ),
-      //     CustomElevatedButton(
-      //       child: Row(
-      //         children: <Widget>[
-      //         Image.asset('images/1xG.png'),
-      //         Text('Sign in with google',
-      //         style: TextStyle(
-      //           color: Colors.black
-      //         ),)
-      //       ],
-      //       ),
-      //       color:Colors.white ,
-      //       onPressed: (){}
-      //       ),
-      //       const SizedBox(
-      //       height: 8.0,
-      //     ),
-      //     // CustomElevatedButton(
-      //     //   child: Text(
-      //     //     "Sign in With Google ",
-      //     //     textAlign: TextAlign.center,
-      //     //     style: TextStyle(
-      //     //         fontSize: 28.0,
-      //     //         fontWeight: FontWeight.w500,
-      //     //         color: Colors.black87),
-      //     //   ),
-      //     //   color: Colors.white,
-      //     //   borderRadius: 8.0,
-      //     //   onPressed: () {},
-      //     // ),
-      //     // const SizedBox(
-      //     //   height: 8.0,
-      //     // ),
-      //     SignInButton(
-      //       text: 'Sign in with Google',
-      //       textColor: Colors.black87,
-      //       color: Colors.white,
-      //       onPressed: () {},
-      //     ),
-      //     // CustomElevatedButton(
-      //     //   child: Text(
-      //     //     "Sign in with Facebook ",
-      //     //     textAlign: TextAlign.center,
-      //     //     style: TextStyle(
-      //     //         fontSize: 28.0,
-      //     //         fontWeight: FontWeight.w500,
-      //     //         color: Colors.black87),
-      //     //   ),
-      //     //   color: Colors.white,
-      //     //   borderRadius: 8.0,
-      //     //   onPressed: () {},
-      //     // ),
-      //     const SizedBox(
-      //       height: 8.0,
-      //     ),
-      //     // custom sign in button
-      //     SignInButton(
-      //       text: 'Sign in with Facebook',
-      //       textColor: Colors.white,
-      //       color: Color(0xFF334D92),
-      //       onPressed: () {},
-      //     ),
-      //     const SizedBox(
-      //       height: 8.0,
-      //     ),
-      //     // custom sign in button
-      //     SignInButton(
-      //       text: 'Sign in with Email',
-      //       textColor: Colors.white,
-      //       color: Colors.teal,
-      //       onPressed: () {},
-      //     ),
-      //     SizedBox(height: 8.0,
-      //     ),
-      //     Text("or",
-      //     textAlign: TextAlign.center,
-      //     style: TextStyle(
-      //       fontSize: 14.0,
-      //       color:Colors.black,
-      //     ),
-      //     ),
-
-      //     SizedBox(height: 8.0,
-      //     ),
-      //     SignInButton(
-      //       text: 'Go anonymus',
-      //       textColor: Colors.black,
-      //       color: Color.fromARGB(255, 229, 255, 0),
-      //       onPressed: () {},
-//           ),
-
-//         ],
-//       ),
-//     );
-//   }
     );
     ;
     ;

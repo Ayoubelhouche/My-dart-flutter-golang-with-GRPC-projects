@@ -1,17 +1,17 @@
-import 'package:grpc/grpc.dart';  
+import 'package:grpc/grpc.dart' show CallOptions, ChannelCredentials, ChannelOptions, ClientChannel;  
 import 'package:grpc_tutorial/src/generated/todo.pbgrpc.dart'; // Import GRPC  
 
 // Helper class to handle client methods. In the real world, you'd probably have wrappers aroudn each gRPC method call
 class Client { 
-  ClientChannel channel;  
-  TodoClient stub;  
+  late ClientChannel channel;  
+  late TodoClient stub;  
 
   Future<void> main(List<String> args) async {
       // Create a new channel with localhost and the server port 
       channel = ClientChannel('localhost',  
-          port: 8001,  
+          port: 9000,  
           options:  // No credentials in this example
-              const ChannelOptions(credentials: ChannelCredentials.insecure()));
+              ChannelOptions(credentials: ChannelCredentials.insecure()));
       // Create the stub, which is the client that you interact with to get gRPC methods  
       stub = TodoClient(channel,  
           options: CallOptions(timeout: Duration(seconds: 30)));  

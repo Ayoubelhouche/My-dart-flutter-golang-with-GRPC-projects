@@ -1,0 +1,20 @@
+syntax="proto3";
+package proto;
+option go_package = "hospital/pb";
+
+service HospitalServer{
+    rpc PostHospital (Hospital) returns (Response);
+}
+
+
+message Hospital{
+    string name=1;
+    string region=2;
+    string location=3;
+}
+
+message Response{
+    string value= 1;
+}
+// protoc -I=proto --go_out=plugins=grpc:model/gen model/protodefs/*.proto
+// protoc --go_out=. --go_opt=paths=source_relative \ --go-grpc_out=. --go-grpc_opt=paths=source_relative \ proto/hello.proto
