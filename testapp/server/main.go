@@ -7,7 +7,7 @@ import (
 	"net"
 
 	"google.golang.org/grpc"
-	pb "inventory"
+	pb "./inventory"
 )
 
 
